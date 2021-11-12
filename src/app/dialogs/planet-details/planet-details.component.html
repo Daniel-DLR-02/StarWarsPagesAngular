@@ -9,8 +9,12 @@
     <p>Terreno:{{planeta?.terrain}}</p>
     <p>Superficie de agua:{{planeta?.surface_water}}</p>
     <p>Población:{{planeta?.population}}</p>
-    <p>Residentes:{{planeta?.residents}}</p>
-    <p>Películas:{{planeta?.films}}</p>
+    <div>Residentes:
+      <p *ngFor="let r of planeta.residents">-{{r}}</p>
+    </div>
+    <div>Peliculas:
+      <p *ngFor="let p of planeta.films">-{{p}}</p>
+    </div>
     <p>Creado:{{planeta?.created}}</p>
     <p>Editado:{{planeta?.edited}}</p>
   </div>
