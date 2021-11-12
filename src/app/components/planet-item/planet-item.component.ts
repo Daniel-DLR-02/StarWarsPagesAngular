@@ -3,7 +3,7 @@ import { Input } from '@angular/core';
 import { Planet } from 'src/app/Interfaces/planet';
 import { PlanetDetailsComponent } from 'src/app/dialogs/planet-details/planet-details.component';
 import { MatDialog } from '@angular/material/dialog';
-
+import { PlanetService } from 'src/app/Service/planet-service.service';
 @Component({
   selector: 'app-planet-item',
   templateUrl: './planet-item.component.html',
@@ -13,17 +13,25 @@ export class PlanetItemComponent implements OnInit {
 
   @Input() planetInput !: Planet;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog,
+    private planetService : PlanetService) { }
 
   ngOnInit(): void {
   }
 
-  openPlanetDetail(url: string) : void{
+  openPlanetDetail() : void{
     this.dialog.open(PlanetDetailsComponent, {
       height: '600px',
       width: '600px',
       data: { url: this.planetInput?.url }
     });
   }
+
+  getPlanetId(url:string) : string{
+    let planetaId=url.split('/');
+    return planetaId[5];
+  }
+
+
 
 }

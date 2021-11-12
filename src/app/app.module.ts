@@ -8,13 +8,15 @@ import { PlanetItemComponent } from './components/planet-item/planet-item.compon
 import { PlanetListComponent } from './pages/planet-list/planet-list.component';
 import { PlanetDetailsComponent } from './dialogs/planet-details/planet-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PlanetDetailComponent } from './pages/planet-detail/planet-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanetItemComponent,
     PlanetListComponent,
-    PlanetDetailsComponent
+    PlanetDetailsComponent,
+    PlanetDetailComponent
   ],
   imports: [
     BrowserModule,
