@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PlanetService } from 'src/app/Service/planet-service.service';
 import { Planet } from 'src/app/Interfaces/planet';
 import { MatDialog } from '@angular/material/dialog';
-import { PlanetDetailsComponent } from 'src/app/dialogs/planet-details/planet-details.component';
+import { PlanetDetailsDialogComponent } from 'src/app/dialogs/planet-details-dialog/planet-details-dialog.component';
 @Component({
   selector: 'app-planet-list',
   templateUrl: './planet-list.component.html',

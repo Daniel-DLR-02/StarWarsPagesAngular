@@ -6,18 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlanetItemComponent } from './components/planet-item/planet-item.component';
 import { PlanetListComponent } from './pages/planet-list/planet-list.component';
-import { PlanetDetailsComponent } from './dialogs/planet-details/planet-details.component';
+import { PlanetDetailsDialogComponent } from './dialogs/planet-details-dialog/planet-details-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PlanetDetailComponent } from './pages/planet-detail/planet-detail.component';
+import { PlanetDetailsComponent } from './pages/planet-details/planet-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanetItemComponent,
     PlanetListComponent,
-    PlanetDetailsComponent,
-    PlanetDetailComponent
-  ],
+    PlanetDetailsDialogComponent,
+    PlanetDetailsComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Input } from '@angular/core';
 import { Planet } from 'src/app/Interfaces/planet';
-import { PlanetDetailsComponent } from 'src/app/dialogs/planet-details/planet-details.component';
+import { PlanetDetailsDialogComponent } from 'src/app/dialogs/planet-details-dialog/planet-details-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 import { PlanetService } from 'src/app/Service/planet-service.service';
 @Component({
@@ -20,7 +20,7 @@ export class PlanetItemComponent implements OnInit {
   }
 
   openPlanetDetail() : void{
-    this.dialog.open(PlanetDetailsComponent, {
+    this.dialog.open(PlanetDetailsDialogComponent, {
       height: '600px',
       width: '600px',
       data: { url: this.planetInput?.url }

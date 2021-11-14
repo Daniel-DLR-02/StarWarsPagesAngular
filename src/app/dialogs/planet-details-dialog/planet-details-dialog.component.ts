@@ -23,10 +23,10 @@ export interface PlanetDetailData{
 
 @Component({
   selector: 'app-planet-details',
-  templateUrl: './planet-details.component.html',
-  styleUrls: ['./planet-details.component.css']
+  templateUrl: './planet-details-dialog.component.html',
+  styleUrls: ['./planet-details-dialog.component.css']
 })
-export class PlanetDetailsComponent implements OnInit {
+export class PlanetDetailsDialogComponent implements OnInit {
 
   planeta!: Planet;
 
