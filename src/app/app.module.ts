@@ -9,6 +9,8 @@ import { PlanetListComponent } from './pages/planet-list/planet-list.component';
 import { PlanetDetailsDialogComponent } from './dialogs/planet-details-dialog/planet-details-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlanetDetailsComponent } from './pages/planet-details/planet-details.component';
+import { PersonItemComponent } from './components/person-item/person-item.component';
+import { PeopleListComponent } from './pages/people-list/people-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PlanetDetailsComponent } from './pages/planet-details/planet-details.co
     PlanetItemComponent,
     PlanetListComponent,
     PlanetDetailsDialogComponent,
-    PlanetDetailsComponent
+    PlanetDetailsComponent,
+    PersonItemComponent,
+    PeopleListComponent
     ],
   imports: [
     BrowserModule,
