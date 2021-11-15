@@ -9,7 +9,7 @@ const routes: Routes = [
   { path:'people', component: PeopleListComponent },
   { path: 'planets', component: PlanetListComponent },
   { path:'planets/:idPlanet', component: PlanetDetailsComponent },
-  { path:'people/:idPeople', component: PeopleDetailsComponent },
+  { path:'people/:idPerson', component: PeopleDetailsComponent },
   { path: '', pathMatch:'full',redirectTo:'/planets'}
 ];
 

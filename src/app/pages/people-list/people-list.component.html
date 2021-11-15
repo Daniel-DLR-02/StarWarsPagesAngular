@@ -1,1 +1,3 @@
-<app-person-item *ngFor="let p of peopleList" [person]="p"></app-person-item>
+<div fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutGap="40px grid">
+  <app-person-item *ngFor= "let p of peopleList" [person] = "p" fxFlex="20" ></app-person-item>
+</div>

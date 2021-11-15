@@ -1,3 +1,6 @@
-<li>
-  <a [routerLink]="['/people', getPersonId(person.url)]">{{person?.name}}</a>
-</li>
+<mat-card class="carta" >
+  <mat-card-title-group>
+    <mat-card-title><a [routerLink]="['/people', getPersonId(person.url)]">{{person?.name}}</a></mat-card-title>
+  </mat-card-title-group>
+
+</mat-card>
