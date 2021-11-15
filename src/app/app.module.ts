@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PlanetDetailsComponent } from './pages/planet-details/planet-details.component';
 import { PersonItemComponent } from './components/person-item/person-item.component';
 import { PeopleListComponent } from './pages/people-list/people-list.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PeopleListComponent } from './pages/people-list/people-list.component';
     AppRoutingModule,
     HttpClientModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
