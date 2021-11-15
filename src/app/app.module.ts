@@ -12,6 +12,8 @@ import { PlanetDetailsComponent } from './pages/planet-details/planet-details.co
 import { PersonItemComponent } from './components/person-item/person-item.component';
 import { PeopleListComponent } from './pages/people-list/people-list.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PeopleDetailsComponent } from './pages/people-details/people-details.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PlanetDetailsDialogComponent,
     PlanetDetailsComponent,
     PersonItemComponent,
-    PeopleListComponent
+    PeopleListComponent,
+    PeopleDetailsComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatDialogModule,
+    MatCardModule,
     BrowserAnimationsModule,
     FlexLayoutModule
   ],

@@ -1,3 +1,8 @@
-<li>
-  <a [routerLink]="['/planets', getPlanetId(planetInput.url)]">{{planetInput?.name}}</a>
-</li>
+<mat-card class="carta" >
+  <mat-card-title-group>
+    <mat-card-title><a [routerLink]="['/planets', getPlanetId(planetInput.url)]">{{planetInput?.name}}</a></mat-card-title>
+  </mat-card-title-group>
+  <mat-card-content>
+    {{planetInput?.orbital_period}}
+  </mat-card-content>
+</mat-card>

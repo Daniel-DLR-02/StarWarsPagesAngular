@@ -14,4 +14,9 @@ export class PersonItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getPersonId(url: string){
+    let urlSplited = url.split('/');
+    return urlSplited[5];
+  }
+
 }
