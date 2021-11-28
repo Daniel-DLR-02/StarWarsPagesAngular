@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Person } from 'src/app/Interfaces/people';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-person-item',
@@ -14,9 +15,13 @@ export class PersonItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getPersonId(url: string){
+  getPersonId(url: String){
     let urlSplited = url.split('/');
     return urlSplited[5];
+  }
+
+  getCharacterImageUrl(person: Person) {
+    return `${environment.imageBaseUrl}${this.getPersonId(person.url)}.jpg`;
   }
 
 }

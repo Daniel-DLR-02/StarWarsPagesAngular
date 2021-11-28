@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from 'src/app/Interfaces/people';
 import { PeopleService } from 'src/app/Service/people.service';
-
 @Component({
   selector: 'app-people-list',
   templateUrl: './people-list.component.html',
@@ -17,5 +16,6 @@ export class PeopleListComponent implements OnInit {
       this.peopleList = resp.results;
     });
   }
+
 
 }

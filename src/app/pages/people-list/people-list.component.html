@@ -1,3 +1,14 @@
-<div fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutGap="40px grid">
-  <app-person-item *ngFor= "let p of peopleList" [person] = "p" fxFlex="20" ></app-person-item>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular movies</title>
+</head>
+<body>
+  <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="1% grid" style="width: 100%;">
+    <app-person-item fxFlex="300px" *ngFor= "let p of peopleList" [person]= "p"></app-person-item>
+  </div>
+</body>
+</html>

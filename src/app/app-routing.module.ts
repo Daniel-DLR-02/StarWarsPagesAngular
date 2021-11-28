@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'planets', component: PlanetListComponent },
   { path:'planets/:idPlanet', component: PlanetDetailsComponent },
   { path:'people/:idPerson', component: PeopleDetailsComponent },
-  { path: '', pathMatch:'full',redirectTo:'/planets'}
+  { path: '', pathMatch:'full',redirectTo:'/people'}
 ];
 
 @NgModule({

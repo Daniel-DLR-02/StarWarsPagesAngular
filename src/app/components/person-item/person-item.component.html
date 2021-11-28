@@ -1,6 +1,12 @@
-<mat-card class="carta" >
-  <mat-card-title-group>
-    <mat-card-title><a [routerLink]="['/people', getPersonId(person.url)]">{{person?.name}}</a></mat-card-title>
-  </mat-card-title-group>
+<mat-card>
+  <mat-card-content>
+    <div class="img-wrapper">
+      <img [src]="getCharacterImageUrl(person)" alt= "Imagen personaje" height="200px" width="200px" class="poster"/>
+    </div>
+    <h3 class="nombre-personaje"><b>{{person?.name}}</b></h3>
+    <p class="ellipsis" *ngIf="person.gender=='male'"><img alt="Icono genero" class="icono" src="../../../assets/2048px-Male_black_symbol.svg.png"></p>
+    <p class="ellipsis" *ngIf="person.gender=='female'"><img alt="Icono genero" class="icono" src="../../../assets/429451-200.png"></p>
+    <p class="ellipsis" *ngIf="person.gender=='n/a'"><img alt="Icono genero" class="icono" src="../../../assets/1e955db131fe1df6719a9445b94096d2.png"></p>
 
+  </mat-card-content>
 </mat-card>
