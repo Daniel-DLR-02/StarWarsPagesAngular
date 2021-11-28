@@ -7,6 +7,12 @@
   <title>Popular movies</title>
 </head>
 <body>
+
+  <div>
+    <p class="ellipsis"><img alt="Icono genero" class="icono" src="../../../assets/2048px-Male_black_symbol.svg.png"><mat-checkbox [checked]="male" class="cbw">Male</mat-checkbox></p>
+    <p class="ellipsis"><img alt="Icono genero" class="icono" src="../../../assets/429451-200.png"><mat-checkbox [checked]="female" class="cbw">Female</mat-checkbox></p>
+    <p class="ellipsis"><img alt="Icono genero" class="icono" src="../../../assets/1e955db131fe1df6719a9445b94096d2.png"><mat-checkbox [checked]="none" class="cbw">None</mat-checkbox></p>
+  </div>
   <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayoutGap="1% grid" style="width: 100%;">
     <app-person-item fxFlex="300px" *ngFor= "let p of peopleList" [person]= "p"></app-person-item>
   </div>

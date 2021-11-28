@@ -14,6 +14,7 @@ import { PeopleListComponent } from './pages/people-list/people-list.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PeopleDetailsComponent } from './pages/people-details/people-details.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {MatCardModule} from '@angular/material/card';
     MatDialogModule,
     MatCardModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

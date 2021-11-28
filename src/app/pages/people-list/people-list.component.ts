@@ -8,6 +8,9 @@ import { PeopleService } from 'src/app/Service/people.service';
 })
 export class PeopleListComponent implements OnInit {
   peopleList: Person[] = [];
+  male = true;
+  female = true;
+  none = true;
 
   constructor(private peopleService: PeopleService) { }
 
@@ -16,6 +19,5 @@ export class PeopleListComponent implements OnInit {
       this.peopleList = resp.results;
     });
   }
-
 
 }
